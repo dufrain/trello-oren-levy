@@ -1,0 +1,33 @@
+
+.column-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.card-container {
+  max-width: 400px;
+  border-style: solid 10px black !important;
+}
+
+.fill {
+  flex: 1;
+}
+
+.card-header-container{
+  display: flex;
+  background-color: #dedede;
+}
+
+.top-icon{
+  height:24px !important;
+  width:24px !important;
+  font-size:24px !important;
+}
+
+mat-button{
+  line-height: 0;
+}
+.mat-icon-button{
+  height: 0;
+  line-height: 0;
+}

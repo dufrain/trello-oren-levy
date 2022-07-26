@@ -1,0 +1,17 @@
+<mat-card class="card-container outline" s>
+  <img mat-card-image [src]="item.img" />
+  <mat-card-content>
+    <p>
+      {{ item.content }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions *ngIf="item.isShowIcons">
+    <button mat-icon-button color="success">
+      <mat-icon class="top-icon">thumb_up</mat-icon>
+    </button>
+    <button mat-icon-button color="success">
+      <mat-icon class="top-icon">message</mat-icon>
+    </button>
+  </mat-card-actions>
+  <mat-card-footer><hr /></mat-card-footer>
+</mat-card>

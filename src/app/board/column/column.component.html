@@ -1,1 +1,15 @@
-<p>column works!</p>
+<mat-card class="card-container">
+  <mat-card-header class="card-header-container">
+    <mat-card-title>{{ stateDescription }}</mat-card-title>
+    <div class="fill"></div>
+    <button mat-icon-button color="success" aria-label="refresh">
+      <mat-icon class="top-icon">refresh</mat-icon>
+    </button>
+  </mat-card-header>
+  <div class="column-items-container">
+    <app-column-item
+      *ngFor="let item of boardService.getColumnItems()"
+      [item]="item"
+    ></app-column-item>
+  </div>
+</mat-card>
